@@ -76,3 +76,19 @@ label {
 .btn:hover {
   background-color: #ffffff40;
 }
+
+.slider {
+  appearance: none;
+  background: transparent;
+  border-radius: 10px;
+  height: 15px;
+  border: 2px solid white;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
