@@ -8,5 +8,41 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Gerador de Senhas</title>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <h1 class="titulo">Gerador de Senhas</h1>
+      <h3 class="displaySenha" id="exibirSenha">senha</h3>
+      <form action="" class="form" id="gerarSenhaForm">
+        <div class="quantCaracteresContainer">
+          <label for="rangeNumber">Quantidade de Caracteres</label>
+          <input type="range" min="1" max="50" value="10" id="rangeCaracter" />
+          <input
+            type="number"
+            class="numeroInput"
+            min="1"
+            max="50"
+            value="10"
+            id="rangeNumber"
+          />
+        </div>
+
+        <div>
+          <label for="incluirMaiuscula">Incluir Maiúsculas</label>
+          <input type="checkbox" id="incluirMaiuscula" />
+        </div>
+
+        <div>
+          <label for="incluirNumero">Incluir Números</label>
+          <input type="checkbox" id="incluirNumero" />
+        </div>
+
+        <div>
+          <label for="incluirSimbolo">Incluir Símbolos</label>
+          <input type="checkbox" id="incluirSimbolo" />
+        </div>
+
+        <button type="submit" class="btn" id="btnSenha">Gerar Senha</button>
+      </form>
+    </main>
+  </body>
 </html>
